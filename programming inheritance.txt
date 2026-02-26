@@ -1,0 +1,8 @@
+programming inheritance
+
+1. static initializer parent
+2. static initializer child
+3. non-static initializer parent
+4. ctor parent
+5. non-static initializer child
+6. ctor child
