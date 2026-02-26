@@ -1,0 +1,9 @@
+// yuxaridaki overload olur, cunki defaultda equals Object gozleyir
+    // override yazanda parameter Object olmalidi amma. sonrada boxing edirik
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Person person = (Person) obj;
+        return this.firstName.equals(person.firstName) && this.lastName.equals(person.lastName) && this.gender == person.gender;
+    }
