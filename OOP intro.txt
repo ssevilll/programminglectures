@@ -1,0 +1,122 @@
+OOP intro	
+
+Supported data types for switch case:
+byte, short, int, char
+Enum
+String
+Wrapper classes(Byte, Short, Integer, Character)
+
+
+Do-While loop: iterates the statement at least once, even if the condition is false
+
+
+If class is declared as public, it should be saved in a file with the same name. If you have several classes in one file, then make sure that exactly one (optional: with the main() method) is declared as public
+
+public static void main(String[] args) {}
+  1      2      3   4        5
+
+1-access modifier
+2- (OPTIONAL) non-access modifier
+3- return type
+4- method name
+5- input parameters
+
+
+
+Method overloading:
+creating same named methods with different signatures, meaning either 1) different number of input parameters, or 2) same number but different type of input parameters
+
+
+VARARGS (variable-length arguments)
+public void numOp (int num1, int... nums){}
+
+-params logic
+-(...) shows all numbers that come after num1/first input will be in nums array
+-you have to write vararags as your last input parameter (at the end)
+-you can only have one vararag for each method
+
+
+
+ACCESS MODIFIERS
+
+Public - accessible anywhere
+Protected - within the same class, package, and child classes
+Default - within the same class and package
+Private - only within the same class
+
+
+
+Constructors are not methods (functions)
+Encapsulation - getting and setting private properties/members/fields/states considering data validation
+
+
+Association - relationships build between objects of different types. There are two types of association:
+
+AGGREGATION: in this type of relationships the objects involved do not necessarily need each other to survive.
+COMPOSITION: in this type of relationships the objects involved strongly dependent on each other, one cannot survive without the other.
+
+
+
+
+
+UML (Unified Modeling Language) is used to systematically and semantically design complex software systems and communicate easily.
+Use-case diagrams are used to graphically represent how users and software (system) interacts. It is one of the easily understood communication tool (medium) for stakeholder.
+Class diagrams are used to graphically represent the structure of the system by showing its classes, and 1) Their attributes and behavior, 2) Relationships between these classes and objects
++ Public
+- Private
+# Protected
+~ Default (package-protected)
+"underlined" Static
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
