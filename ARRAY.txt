@@ -1,0 +1,78 @@
+ARRAY 
+
+type name[] = new type [size]; OR type[] name=new type [size];
+
+
+Arrays.toString(a) will print [1, 2, 3] format
+
+
+Two-dimensional array initialization 
+type mArray[][] = new type[size1][size2];
+
+Three-dimensional array initialization
+type mArray[][][] = new type[size1][size2][size3];
+
+
+Irregular arrays (JAGGED arrays) /  multidimensional arrays may have variable length
+int irarr[][] = new int[5][];
+irarr[0] = new int[1];
+irarr[1] = new int[2];
+irarr[2] = new int[3];
+irarr[3] = new int[4];
+irarr[4] = new int[5];
+
+
+
+For-each (enhanced for) loop
+for (type iterationVar : array) {}
+
+For-each loop for multidimensional loop 
+for (int x[] : arr) {
+  for (int y : x) {
+    sum += y;
+  }
+}
+
+
+DIFFERENCE between for-each and for loop is FOR-EACH LOOP IS READ-ONLY but FOR LOOP IS WRITE-ALLOWED
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
