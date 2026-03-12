@@ -1,0 +1,43 @@
+String
+
+Strings are immutable
+The value can be changed only by initializing a new value but still it creates a new string and assigns proper reference rather than "changing" the value
+
+
+! ADDING LITERALS TO THE POOL HAPPENS DURING THE COMPILE TIME
+INTERN adds to the pool if not already there, but if it exists in the pool it just gets the reference and assigns
+
+indexOf(String) return the position of the provided string in string itself, if NOT FOUND returns -1
+intern() if the string pool has a string equal to this string object, returns a reference to it. Otherwise, create it in the String pool, the return the reference.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
