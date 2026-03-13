@@ -2,6 +2,9 @@ public class DeepVsShallow {
 
     class Segment implements Cloneable {
 
+        // why do we implement cloneable interface? because we want to create a copy of
+        // the object and we need to override the clone method to create a deep copy
+
         private Point p1;
         private Point p2;
 
@@ -18,6 +21,10 @@ public class DeepVsShallow {
             return p2;
         }
 
+        // to copy an object we can use clone method, but it creates a shallow copy by
+        // default
+        // to create a deep copy we need to override the clone method and create new
+        // objects for the fields that are objects
         @Override
         public Segment clone() {
             try {
