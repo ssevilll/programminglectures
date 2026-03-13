@@ -20,11 +20,27 @@ public class DeepVsShallow {
         public Point getP2() {
             return p2;
         }
-
         // to copy an object we can use clone method, but it creates a shallow copy by
         // default
         // to create a deep copy we need to override the clone method and create new
         // objects for the fields that are objects
+
+
+        // why do we clone the points in the segment? because if we don't clone the
+        // points, then the cloned segment will reference the same points as the
+        // original segment, and any changes to the points in the cloned segment will
+        // affect the original segment. By cloning the points, we create new point
+        // objects for the cloned segment, so that changes to the points in the cloned
+        // segment do not affect the original segment.
+
+        
+        // why do we override the clone method in the point class? because if we don't
+        // override the clone method in the point class, then when we clone the segment,
+        // the points will not be cloned and will reference the same points as the
+        // original segment. By overriding the clone method in the point class, we
+        // ensure that when we clone the segment, the points are also cloned and do not
+        // reference the same points as the original segment.
+
         @Override
         public Segment clone() {
             try {
