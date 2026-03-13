@@ -1,4 +1,4 @@
-programming inheritance
+PRINTING ORDER 
 
 1. static initializer parent
 2. static initializer child
