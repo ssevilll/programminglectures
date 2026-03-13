@@ -1,0 +1,130 @@
+OOP principles
+
+Access modifiers can be applied to:
+Members
+Methods
+Class names
+Constructors
+
+
+Nested classes may have other type of visibility
+
+For protected even if you imported the package it wont be visible (they are still different packages)
+
+private constructors are mainly used for singleton pattern
+
+
+4 principles of OOP:
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction
+
+
+Setters/Modifiers
+Fetters/Accessors
+
+
+
+Non-access modifiers:
+static
+final
+abstract
+native
+synchronized
+transient
+volatile
+strictfp
+
+
+static methods cannot use this or super keywords
+
+
+Types of inheritance:
+Single
+	Only one parent and one child
+Multilevel
+	Superclass, subclass, subsubclass
+Hierarchical
+	1 superclass 2 subclass for the same superclass
+Multiple
+	2 superclass 1 subclass for the same subclass 
+	Java does not allow multiple inheritance via classes!
+	It is still achievable via interfaces.
+Hybrid
+	1 superclass 2 subclass 1 subsubclass
+	Java does not allow multiple inheritance via classes!
+ 	It is still achievable via interfaces.
+
+
+
+If members/methods in superclass are defined as private, the creation of the same named members/methods in a subclass will not extend the variables of the superclass
+
+In a class hierarchy, when a method in a subclass has the same signature (name, return type and parameters) as a method in its superclass, then this method is said to override the method in the superclass.
+
+
+Overriding is when a method in a subclass has the same signature as in superclass.
+Overloading is when the same named methods have different argument list and return types
+
+
+Instance initialization blocks can access instance and static variables.
+Static initialization blocks can only access static variables
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
