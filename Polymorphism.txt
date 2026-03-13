@@ -1,0 +1,163 @@
+Polymorphism
+
+
+Assigning a parent class type reference, the subclass object allows to use the power of polymorphism: a single class can have different behavior or forms (poly + morph) depending on the implementation
+
+The declaration, initialization and method call syntax is checked during the compilation of the Java classes.
+
+In Java, the access modifier of the overriding method in the subclass cannot be more restrictive than the overridden method of the superclass
+
+The distinction between hiding a static method and overriding an instance method has important implications:
+▪ The version of the overridden instance method that gets invoked is the one in the subclass.
+▪ The version of the hidden static method that gets invoked depends on whether it is invoked from the superclass or the subclass
+
+Final objects and arrays (which are objects as well) can change their values through the methods and indices correspondingly but cannot have a new reference assigned to themselves
+
+The final variable can be initialized in the declaration line or can be initialized in 1. instance initializer 2. constructor
+
+Using final keyword in method declaration prevents its overriding
+
+Declaring a class as final means the class cannot be extended by any other class
+
+Object clone() => Creates a copy of the object
+Class getClass() => Gets the class of an object at runtime
+int hashCode() => Return the hash code associated with the object
+
+
+In Java, the primitive types are passed to the methods as values (a copy of their values) – the changes made to the primitive type parameter in the method does not change its value. This is called call-by-value.
+The objects are passed as a reference – all changes made to the objects change the original object. This is called call-by-reference.
+
+
+
+ABSTRACT
+
+These unimplemented methods are called abstract and have the following syntax:
+	abstract returnType methodName(parameters);
+As seen from the syntax, there is no curly braces that define the body of the method. The method declaration ends with the semicolon
+
+
+
+An abstract class can contain:
+Abstract methods (methods without a body)
+Non-abstract methods (normal methods with a body)
+Variables, constructors, static methods, etc.
+
+If a method in parent class is abstract then every subclass must implement it (write body accordingly)
+If a subclass does not implement the abstract method then the subclass itself should be abstract
+
+
+You cannot have an abstract method inside a non-abstract class in Java. ❌
+If a class contains at least one abstract method, the class itself must be declared abstract.
+
+
+
+
+INTERFACES
+
+The default access modifier for interface methods is public
+A class can implement more than one interface (recall multiple inheritance)
+Generally speaking, interfaces tell you what to do but NOT how to do it.
+Interfaces can have public or no access modifier. If no access modifier is given, then the interface is accessible only to classes defined in the same package as the interface.
+If a class does not fully implement the methods required by the interface, then that class must be declared as abstract
+An interface can extend another interface
+Variables defined in interfaces are implicitly made as final and static.
+Variables need to have an initial value (int x; ❌              int x=5; 👍)
+Interface method can have an implementation by having a default keyword
+Interfaces can have static methods
+
+
+
+ENUMERATIONS 
+An enumeration is a list of named constants that define a new data type and its values.
+Enums are implicitly final, which means you cannot extend or implement them
+The enumerations are usually used to define types that can take discrete and strict values
+When used in a switch statement, there is no need to provide the Enum type (i.e., no need to use Color.Red, Red is just right)
+
+
+
+SEALED CLASS
+final → nobody can extend the class
+sealed → only selected classes can extend the class
+
+
+A sealed class is a class which allows only a specific subclasses to directly extend it.
+Note that indirectly sealed classes can be extended.
+Sealed classes should be defined in the same package or named module as their direct subclasses.
+The permits clause is optional if the sealed class and its direct subclasses are declared within the same file, or the subclasses are nested within the sealed class.
+
+Sealed class keywords:
+◦ sealed - Indicates that a class or interface may only be extended/implemented by named classes or interfaces
+◦ permits - Used with the sealed keyword to list the classes and interfaces allowed
+◦ non-sealed - Applied to a class or interface that extends a sealed class, indicating that it can be extended by unspecified classes
+
+
+Sealed classes can be extended by only one of the followings:
+◦ A Final class
+◦ Another sealed class
+◦ A non-sealed class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
