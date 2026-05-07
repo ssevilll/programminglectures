@@ -1,0 +1,167 @@
+PP prep
+
+EXCEPTIONS
+Kinds of exception:
+1. Checked exceptions -> checked during COMPILE time
+2. Runtime exceptions -> checked during RUN time
+3. Errors -> external exceptions
+
+try-catch block
+throws keyword in method signature
+
+
+COLLECTIONS
+
+1. List 
+	*extends collection
+	*inserting or accessing with zero-based indexing
+	*may contain duplicate items
+	
+2. Set 
+	*extends collection
+	*NO DUPLICATION IS ALLOWED
+	*add method returns false if duplicate element is added
+
+3. SortedSet
+	*extends set
+	*sorts the set in ascending order
+
+4. NavigableSet
+	*extends sorted set
+	*may return element based on the closest match to a given value
+
+5. Queue
+	*extends collection
+	*FIFO behavior
+	*null elements are not allowed
+	*poll() and remove() both remove elements from head but poll() returns null if queue is empty but remove() returns exception
+	*peek() and element() both get elements from head (they don't remove) but peek() returns null if queue is empty but element() returns exception
+	*add() and offer() both add elements to the tail but if length is fixed offer() just attempts to do so (may fail) but add() throws exception
+
+6. Dequeue
+	*extends queue
+	*double ended queue
+	*may function as both FIFO(queue) or LIFO(stack)
+	*null elements are not allowed
+	*pptde sehife 18deki cedvel
+
+7. ArrayList
+	*extends AbstractList
+	*implements List interface
+	*no fixed length (it can grow as needed)
+	
+8. LinkedList 
+	*implements List, Deque interfaces
+	
+9. HashSet
+	*extends abstractset
+	*implements set interface
+	*elements order may change
+
+10. LinkedHashSet
+	*extends hashset
+	*insertion-order is kept
+	*the order of an element is not affected if that element is re-entered
+
+11. TreesSet
+	*extends abstractset
+	*implements navigableset
+	*elements will be sorted in ascending order
+
+12. Maps
+	*stores associations between keys and their values
+	*keys are unique
+	*values can be found by the provided key
+	*there is no iterator() method in maps
+	*instead keyset() method -that returns the set of keys- can be iterated
+
+13. SortedMap
+	*sorts entries by ascending order based on the keys
+	*firstKey() -gets first key on the map
+	*lastKey() - gets last key on the map
+
+14. NavigableMap
+	*extends sortedmap
+	*returns the closest match (entry) to a given key
+
+15. HashMap
+	*you can initialize the size of hashmap
+	*order may change
+	
+16. LinkedHashMap
+	*insertion-order iteration over the map
+	
+17. TreeMap
+	*sorts elements in ascending order
+
+
+Map insertions => “B”, “Brown”; “W”, “White”; “G”, “Green”; “P”, “Purple”; “Y”, “Yellow”;“R”, “Red”
+
+(random order)
+HashMap => “G”, “Green”; “W”, “White”; “B”, “Brown”; “Y”, “Yellow”;“R”, “Red”; “P”, “Purple”
+
+
+(inserted order)
+LinkedHashMap => “B”, “Brown”; “W”, “White”; “G”, “Green”; “P”, “Purple”; “Y”, “Yellow”;“R”, “Red”
+
+(ascending order)
+TreeMap => “B”, “Brown”; “G”, “Green”; “P”, “Purple”; “R”, “Red”; “Y”, “Yellow”; “W”, “White”
+
+
+
+StringTokenizer(String str) 
+StringTokenizer(String str, String delimiters) 
+*The first constructor accepts a string and fetches parts(tokens) by space delimiter. 
+*The second constructor sets the delimiter symbol. It can be a single symbol like “,” or set of delimiters like “,#_”. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
