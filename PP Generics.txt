@@ -1,0 +1,102 @@
+PP Generics
+
+Object declaration:
+GeneralClass <Integer> gc;
+
+Object instantiation
+gc=new GeneralClass<Integer>();
+
+
+!The generics can only be references (primitive types can not be used in generics)
+!If another type is provided after type declaration it will cause an error
+!When primitive value is assigned it is automatically converted to the corresponding class (if any)
+!The same auto casting will happen with the return type
+
+While using generics if we try to cast integer to string if wont compile (but in normal classes it will compile but give an error during runtime)
+
+
+
+Most used type parameter names:
+E- element (collections framework)
+K- key
+N- number
+T- type
+V- value
+S,U,V...- 2nd, 3rd, 4th types
+
+
+
+Extends Number- means only subclasses of number are allowed (upper bound)
+Super Integer-means only upperclasses of integer are allowed (lower bound)
+
+
+Even if the class is not generic its constructor may be generic
+
+Interfaces can also be generic
+
+Restrictions:
+We can not create an instance of a type parameter : obj=new T(); -> not allowed
+
+Array instantiation can not be done with type parameter: (T[] arr; is okay) arr=new T[10]; -> not allowed
+
+Types can not be used with static keyword: static T something, static T getobject(); -> bot not allowed
+
+We can not create generic exception classes
+
+
+
+!It is possible to have a generic method in non-generic class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
