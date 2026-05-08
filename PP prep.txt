@@ -116,6 +116,13 @@ StringTokenizer(String str, String delimiters)
 
 
 
+ITERATOR
+
+each collection class has built in iterator() method that returns iterator to the start of the collection
+HasNext() method check if there is a next element in the collection
+
+
+
 
 
 
