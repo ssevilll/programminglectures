@@ -1,0 +1,63 @@
+Functional interfaces, lambda
+
+It is type of interface that has ONLY ONE abstract method
+it can be the only method or other methods might have been implemented
+
+Lambda expression
+
+if there is only one parameter we may ignore the parenthesis
+if there is non or more than one parameters they should be enclosed with the parenthesis
+
+
+Boolean nt = (n) -> (n%2)==0;
+
+Predicate - filtering data based on condition
+Consumer - performing an action on an object
+Function - transforming an object into another type
+Supplier - creating or providing a new object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
