@@ -1,0 +1,157 @@
+Parallelism
+
+Process based multitasking
+ability of running several programs at the same time (email and web browsing kind of)
+
+Thread based multitasking
+single program can perform more than one action (updating font and saving the current version)
+sharing the same address space
+
+
+Threads
+
+A class should either extend Thread class or implement Runnable interface and write the execution code in run() method
+
+When Runnable is implemented the thread class should be instantiated
+
+When thread class is extended the object can be instantiated itself
+
+
+!!!Thread is executed by start() method NOT RUN()!!
+
+
+
+If we create thread by extending Thread class it has some additional built in methods
+
+
+Thread lifecycle
+
+1. Creation: the process remains in this state until the program starts the thread (new thread stage)
+2. Runnable: when start() is called but the thread scheduler has not picked this thread to be executed
+3. Running: scheduler picks the thread to be executed
+4. Idle: thread when entered the time of waiting for the state for a specific interval of time. That time, the thread is not in Execution state but still alive.
+5. Dead/Terminated: thread completes its execution
+
+
+
+
+Thread states:
+
+1. New
+	*start() has not been called yet
+	*thread exists only as an object
+
+2. Runnable
+	*after calling start()
+	*java inside decided when CPU executes it
+
+3. Blocked
+	*happens with synchronized
+	*thread is waiting to enter a synchronized block/method because another thread already has the lock
+
+4. Waiting
+	*wait(), join() methods
+	*no time limit just needs another thread to finish first
+
+5. Timed_Waiting
+	*sleep(time), wait(time), join(time)
+	*thread waits for a specific amount of time
+
+6. Terminated
+	*thread has finished execution
+	*run() method completed
+	*thread can not restart
+
+
+
+Shared resources
+
+Race condition: 2 things trying to access the same thing
+
+static variables need static synchronization no prevent race condition
+
+
+Concurrency-multiple tasks make progress during the same time period (not necessarily at the same time) may use one CPU core
+Parallelism- multiple tasks run at the exact same time, needs multiple CPU cores
+
+
+Volatile keyword- changes made by one thread are immediately visible to other threads
+
+wait() - makes a thread to release the lock, enter waiting state, wait until another thread wakes it up
+
+notify() - wakes up one waiting thread
+
+notifyAll() - wakes up all waiting threads
+
+!!!!wait,notify,notifyall must be used inside a synchronized block
+
+
+
+
+Liveliness- a concurrent application's ability to execute in a timely manner (canliliq)
+
+
+Deadlock- everything is locked nothing can work the process is stopped 
+Livelock- even if it is locked the process is going
+Starvation- one thread is starving the other ones, not letting them to start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
